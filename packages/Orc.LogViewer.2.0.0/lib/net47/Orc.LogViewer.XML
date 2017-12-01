@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Orc.LogViewer</name>
+    </assembly>
+    <members>
+        <member name="T:Orc.LogViewer.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Orc.LogViewer.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Orc.LogViewer.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Orc.LogViewer.Properties.Resources.LogViewer_AdvancedLogViewerControl_Button_Content_Clear">
+            <summary>
+              Looks up a localized string similar to Clear.
+            </summary>
+        </member>
+        <member name="P:Orc.LogViewer.Properties.Resources.LogViewer_AdvancedLogViewerControl_Button_Content_Copy">
+            <summary>
+              Looks up a localized string similar to Copy.
+            </summary>
+        </member>
+        <member name="P:Orc.LogViewer.Properties.Resources.LogViewer_AdvancedLogViewerControl_Button_Content_Open">
+            <summary>
+              Looks up a localized string similar to Open.
+            </summary>
+        </member>
+        <member name="P:Orc.LogViewer.Properties.Resources.LogViewer_AdvancedLogViewerControl_FilterBoxControl_Watermark_Filter">
+            <summary>
+              Looks up a localized string similar to Filter.
+            </summary>
+        </member>
+        <member name="P:Orc.LogViewer.Properties.Resources.LogViewer_AdvancedLogViewerControl_TextBlock_Text_Debug">
+            <summary>
+              Looks up a localized string similar to Debug.
+            </summary>
+        </member>
+        <member name="P:Orc.LogViewer.Properties.Resources.LogViewer_AdvancedLogViewerControl_TextBlock_Text_Error">
+            <summary>
+              Looks up a localized string similar to Error.
+            </summary>
+        </member>
+        <member name="P:Orc.LogViewer.Properties.Resources.LogViewer_AdvancedLogViewerControl_TextBlock_Text_Info">
+            <summary>
+              Looks up a localized string similar to Info.
+            </summary>
+        </member>
+        <member name="P:Orc.LogViewer.Properties.Resources.LogViewer_AdvancedLogViewerControl_TextBlock_Text_Warning">
+            <summary>
+              Looks up a localized string similar to Warning.
+            </summary>
+        </member>
+        <member name="T:Orc.LogViewer.AdvancedLogViewerControl">
+            <summary>
+            Interaction logic for AdvancedLogViewerControl.xaml.
+            </summary>
+            <summary>
+            AdvancedLogViewerControl
+            </summary>
+        </member>
+        <member name="M:Orc.LogViewer.AdvancedLogViewerControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ModuleInitializer">
+            <summary>
+            Used by the ModuleInit. All code inside the Initialize method is ran as soon as the assembly is loaded.
+            </summary>
+        </member>
+        <member name="M:ModuleInitializer.Initialize">
+            <summary>
+            Initializes the module.
+            </summary>
+        </member>
+    </members>
+</doc>

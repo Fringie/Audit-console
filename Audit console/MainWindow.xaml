@@ -1,0 +1,113 @@
+﻿<Controls:MetroWindow
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:orc="http://www.wildgums.net.au/orc"
+                      x:Class="Audit_console.MainWindow"
+                      Title="Audit console"
+                      Height="1024"
+                      Width="720" WindowStartupLocation="CenterScreen" ToolTip="" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight">
+    <Controls:MetroWindow.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Icons.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Controls:MetroWindow.Resources>
+    <Border Padding="10">
+
+        
+
+        <StackPanel Margin="0,3,0,-3">
+            <StackPanel>
+                <!-- Tabs -->
+                <Controls:MetroTabControl x:Name="Navbar" Height="auto">
+                    <TabItem x:Name="TabGeneral"  Header="General" Controls:TabControlHelper.IsUnderlined="True">
+                        <Grid x:Name="GeneralPanel" Background="#eaf5fb" Margin="0 30 0 0" MinWidth="600">
+                            <!-- General panel start -->
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".75*" MaxWidth="140"/>
+                                <ColumnDefinition Width="0.5*"/>
+                                <ColumnDefinition Width="2.5*"/>
+                            </Grid.ColumnDefinitions>
+                            <ToggleButton x:Name="BtnStart" 
+                                      Grid.Column="0"
+                                      Width="100" Height="100" 
+                                      Margin="7 7"
+                                      BorderBrush="#c0e0f2"
+                                      Style="{DynamicResource MetroCircleToggleButtonStyle}"
+                                      ToolTip="Start/stop" 
+                                      Click="BtnStart_Click" 
+                                      MouseEnter="BtnStart_MouseEnter" MouseLeave="BtnStart_MouseLeave">
+                                <Rectangle x:Name="TicArrow"
+                                       Width="60"
+                                       Height="60"
+                                       Fill="{DynamicResource WhiteBrush}">
+                                    <Rectangle.OpacityMask>
+                                        <VisualBrush Stretch="Fill"
+                                                 Visual="{DynamicResource appbar_check}"/>
+                                    </Rectangle.OpacityMask>
+                                </Rectangle>
+                            </ToggleButton>
+
+                        </Grid>
+                        <!-- General Panel end -->
+
+
+                    </TabItem>
+                    <TabItem Header="PowerShell" Cursor="Hand">
+                        <Grid Background="#FFE5E5E5"/>
+                    </TabItem>
+                </Controls:MetroTabControl>
+
+            </StackPanel>
+            <!-- Tabs end -->
+
+            <StackPanel>
+                <!-- Audit console -->
+                <Controls:MetroTabControl x:Name="NavbarTest">
+                    <Controls:MetroTabControl.Resources>
+                        <Style TargetType="{x:Type TabItem}"/>
+                    </Controls:MetroTabControl.Resources>
+                </Controls:MetroTabControl>
+            </StackPanel>
+            <!-- Audit console end -->
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+            </Grid>
+
+
+
+            <StackPanel MinHeight="30">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    
+                </Grid>
+                
+
+            </StackPanel>
+            <StackPanel>
+
+                <orc:AdvancedLogViewerControl Name="LogViewer" AccentColorBrush="Orange" MaxWidth="720" Height="459" SkipSearchingForInfoBarMessageControl="True" />
+            </StackPanel>
+
+
+
+
+        </StackPanel>
+    </Border>
+</Controls:MetroWindow>

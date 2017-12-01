@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Audit_console.Config.io" GeneratedClassName="Environments">
+  <Profiles />
+  <Settings>
+    <Setting Name="DevSharePoint" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://hymans-cim-dev.company-net.com</Value>
+    </Setting>
+    <Setting Name="IntSharePoint" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://hymans-cim.company-net.com</Value>
+    </Setting>
+    <Setting Name="LiveSharePoint" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://www.clients.hymans.co.uk/</Value>
+    </Setting>
+    <Setting Name="DevCrm" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://cns-crmhymans16.company-net.com/HymansDev/XRMServices/2011/Organization.svc</Value>
+    </Setting>
+    <Setting Name="IntCrm" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://cns-crmhymans16.company-net.com/CRMIntegration/XRMServices/2011/Organization.svc</Value>
+    </Setting>
+    <Setting Name="LiveCrm" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://crm.hymans.co.uk/hymansrobertson/XRMservices/2011/Organization.svc</Value>
+    </Setting>
+    <Setting Name="Environment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dev</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

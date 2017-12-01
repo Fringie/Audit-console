@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Audit_console.Logging" GeneratedClassName="LogTypes">
+  <Profiles />
+  <Settings>
+    <Setting Name="ErrorUnhandledException" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[General] Unhandled Exception</Value>
+    </Setting>
+    <Setting Name="LogConfigIo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[General] Config.IO successfully ran</Value>
+    </Setting>
+    <Setting Name="LogConfigFailed" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[General] Log config failed</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
