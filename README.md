@@ -1,2 +1,2 @@
 # Audit console
-This is WPF application I made in my spare time with the intention of it being used to replace a console application that helped manage a SharePoint 2013 farm although this project never got used.
+This wpf app provides Windows 8 styled GUI elements. The intention was to migrate an existing console app codebase into the WPF app to provide administration experiance. As I was building this in my personal time when I switched companies I dropped this project.
